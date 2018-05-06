@@ -50,7 +50,7 @@ def phd(bot, update):
     try:
 
         try:
-            r = requests.get("http://scholarship-positions.com/category/phd-scholarships-positions")
+            r = requests.get("https://scholarship-positions.com/category/phd-scholarships-positions")
         except:
             print("can not connect , retry in 60 secs...")
 
