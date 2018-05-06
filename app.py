@@ -102,7 +102,7 @@ def master(bot, update):
     try:
 
         try:
-            r = requests.get("http://scholarship-positions.com/category/masters-scholarships/")
+            r = requests.get("https://scholarship-positions.com/category/masters-scholarships/")
         except:
             print("can not connect , retry in 60 secs...")
 
@@ -115,7 +115,7 @@ def master(bot, update):
         for item in soupo:
             mes = str(item.text)
 
-            link = item.find_next('a', attrs={'href': re.compile("^http://")})
+            link = item.find_next('a', attrs={'href': re.compile("^https://")})
             print(link.get('href'))
 
             link2 = str(link.get('href'))
@@ -151,7 +151,7 @@ def undergraduate(bot, update):
     try:
 
         try:
-            r = requests.get("http://scholarship-positions.com/category/under-graduate-scholarship/")
+            r = requests.get("https://scholarship-positions.com/category/under-graduate-scholarship/")
         except:
             print("can not connect , retry in 60 secs...")
 
@@ -164,7 +164,7 @@ def undergraduate(bot, update):
         for item in soupo:
             mes = str(item.text)
 
-            link = item.find_next('a', attrs={'href': re.compile("^http://")})
+            link = item.find_next('a', attrs={'href': re.compile("^https://")})
             print(link.get('href'))
 
             link2 = str(link.get('href'))
