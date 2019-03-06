@@ -1,4 +1,4 @@
 python-telegram-bot
-bs4
-requests
+googletrans
+feedparser
 telegram
